@@ -37,10 +37,10 @@ class CommissionEmployee:
         return self._rate
 
     @rate.setter
-    def rate(self, rate):
-        if rate < Decimal(0.0):
+    def rate(self, rates):
+        if rates < Decimal(0.0):
             raise ValueError("Invalid rate amount ")
-        self._rate = rate
+        self._rate = rates
 
     def earning(self):
         return self.sales * (self.rate / 100)
