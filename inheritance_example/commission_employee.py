@@ -39,7 +39,7 @@ class CommissionEmployee:
     @rate.setter
     def rate(self, rates):
         if rates < Decimal(0.0):
-            raise ValueError("Invalid rate amount ")
+            raise ValueError("Invalid rate amount  enter valid amount")
         self._rate = rates
 
     def earning(self):
